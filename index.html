@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Todo app</title>
+
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- main div -->
+        <div class="container">
+            <section class="title-section">
+                <h1 class="to-do-title">TODO</h1>
+                <img alt="dark mode option" class="dark-mode" />
+            </section>
+            <form class="todo-input">
+                <input
+                    type="checkbox"
+                    name="add-todo"
+                    class="add-todo"
+                    disabled
+                    aria-disabled
+                />
+                <input
+                    type="text"
+                    class="input-todo"
+                    placeholder="Create a new todo"
+                />
+            </form>
+
+            <section class="main-content">
+                <ul class="task-section"></ul>
+                <div class="bottom-section">
+                    <p class="items-left">3 items left</p>
+                    <ul class="task-filters">
+                        <li class="all-filter active">all</li>
+                        <li class="active-filter">active</li>
+                        <li class="completed-filter">completed</li>
+                    </ul>
+                    <p class="clear-completed">Clear Completed</p>
+                </div>
+            </section>
+        </div>
+
+        <p class="fine-print">Drag and drop to reorder list</p>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
